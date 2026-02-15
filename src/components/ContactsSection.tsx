@@ -1,0 +1,89 @@
+import Icon from "@/components/ui/icon";
+
+const contacts = [
+  {
+    icon: "Phone",
+    label: "Телефон",
+    value: "+7 (999) 123-45-67",
+    href: "tel:+79991234567",
+  },
+  {
+    icon: "Mail",
+    label: "Email",
+    value: "hello@linguaviva.ru",
+    href: "mailto:hello@linguaviva.ru",
+  },
+  {
+    icon: "MapPin",
+    label: "Адрес",
+    value: "г. Москва, ул. Тверская, 15",
+    href: "#",
+  },
+  {
+    icon: "Clock",
+    label: "Режим работы",
+    value: "Пн-Сб: 9:00 — 21:00",
+    href: "#",
+  },
+];
+
+const socials = [
+  { icon: "MessageCircle", label: "Telegram", href: "#" },
+  { icon: "Instagram", label: "Instagram", href: "#" },
+  { icon: "Youtube", label: "YouTube", href: "#" },
+];
+
+const ContactsSection = () => {
+  return (
+    <section id="contacts" className="py-24">
+      <div className="container mx-auto px-4">
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100 text-orange-700 text-sm font-medium mb-4">
+            <Icon name="MapPin" size={16} />
+            Контакты
+          </div>
+          <h2 className="font-heading font-800 text-4xl lg:text-5xl mb-4">
+            Свяжитесь <span className="gradient-text">с нами</span>
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            Ответим на вопросы и поможем подобрать подходящий курс
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          {contacts.map((contact, index) => (
+            <a
+              key={index}
+              href={contact.href}
+              className="hover-lift group rounded-2xl p-6 bg-white border border-border/50 shadow-sm text-center"
+            >
+              <div className="w-14 h-14 rounded-2xl gradient-primary flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                <Icon name={contact.icon} size={24} className="text-white" />
+              </div>
+              <div className="text-sm text-muted-foreground mb-1">{contact.label}</div>
+              <div className="font-heading font-bold text-sm">{contact.value}</div>
+            </a>
+          ))}
+        </div>
+
+        <div className="flex justify-center gap-4">
+          {socials.map((social, index) => (
+            <a
+              key={index}
+              href={social.href}
+              className="hover-lift w-14 h-14 rounded-2xl bg-white border border-border/50 shadow-sm flex items-center justify-center group"
+            >
+              <Icon
+                name={social.icon}
+                size={22}
+                className="text-muted-foreground group-hover:text-foreground transition-colors"
+              />
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ContactsSection;
