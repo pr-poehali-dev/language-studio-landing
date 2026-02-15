@@ -4,8 +4,8 @@ const contacts = [
   {
     icon: "Phone",
     label: "Телефон",
-    value: "+7 (999) 123-45-67",
-    href: "tel:+79991234567",
+    value: "8 (921) 123-82-21",
+    href: "tel:89211238221",
   },
   {
     icon: "Mail",
