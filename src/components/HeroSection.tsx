@@ -55,11 +55,6 @@ const HeroSection = () => {
               </div>
               <div className="w-px h-10 bg-border" />
               <div>
-                <div className="font-heading font-800 text-3xl gradient-text">12</div>
-                <div className="text-sm text-muted-foreground">преподавателей</div>
-              </div>
-              <div className="w-px h-10 bg-border" />
-              <div>
                 <div className="font-heading font-800 text-3xl gradient-text">15 лет</div>
                 <div className="text-sm text-muted-foreground">опыта</div>
               </div>
