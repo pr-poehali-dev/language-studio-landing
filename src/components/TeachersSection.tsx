@@ -1,40 +1,5 @@
 import Icon from "@/components/ui/icon";
 
-const teachers = [
-  {
-    name: "Анна Мюллер",
-    role: "Немецкий язык",
-    experience: "10 лет опыта",
-    description: "Носитель языка из Берлина. Сертифицированный преподаватель DaF.",
-    emoji: "👩‍🏫",
-    color: "bg-purple-100",
-  },
-  {
-    name: "Джеймс Уилсон",
-    role: "Английский язык",
-    experience: "8 лет опыта",
-    description: "CELTA-сертификат. Подготовил 200+ учеников к IELTS на 7.0+",
-    emoji: "👨‍🎓",
-    color: "bg-blue-100",
-  },
-  {
-    name: "Мария Гарсия",
-    role: "Испанский язык",
-    experience: "7 лет опыта",
-    description: "Из Барселоны. Институт Сервантеса. Экзаменатор DELE.",
-    emoji: "👩‍💼",
-    color: "bg-orange-100",
-  },
-  {
-    name: "Елена Козлова",
-    role: "Английский и немецкий",
-    experience: "12 лет опыта",
-    description: "Методист студии. Автор курсов для начинающих взрослых.",
-    emoji: "👩‍🔬",
-    color: "bg-green-100",
-  },
-];
-
 const TeachersSection = () => {
   return (
     <section id="teachers" className="py-24 bg-gradient-to-b from-purple-50/50 to-white">
@@ -52,21 +17,16 @@ const TeachersSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {teachers.map((teacher, index) => (
-            <div
-              key={index}
-              className="hover-lift group text-center rounded-2xl p-6 bg-white border border-border/50 shadow-sm"
-            >
-              <div className={`w-24 h-24 rounded-3xl ${teacher.color} flex items-center justify-center text-5xl mx-auto mb-5 group-hover:scale-110 transition-transform`}>
-                {teacher.emoji}
-              </div>
-              <h3 className="font-heading font-bold text-lg mb-1">{teacher.name}</h3>
-              <p className="text-sm gradient-text font-semibold mb-1">{teacher.role}</p>
-              <p className="text-xs text-muted-foreground mb-3">{teacher.experience}</p>
-              <p className="text-sm text-muted-foreground leading-relaxed">{teacher.description}</p>
+        <div className="flex justify-center">
+          <div className="hover-lift group text-center rounded-2xl overflow-hidden bg-white border border-border/50 shadow-sm max-w-sm w-full">
+            <div className="overflow-hidden h-80">
+              <img
+                src="https://cdn.poehali.dev/projects/c066c37a-f840-40ae-bf25-35290452380d/bucket/35f364a9-ef21-4a45-9003-9875215dd2ca.jpg"
+                alt="Преподаватель"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
