@@ -10,8 +10,8 @@ const contacts = [
   {
     icon: "Mail",
     label: "Email",
-    value: "hello@linguaviva.ru",
-    href: "mailto:hello@linguaviva.ru",
+    value: "hispania35@yandex.ru",
+    href: "mailto:hispania35@yandex.ru",
   },
   {
     icon: "MapPin",
