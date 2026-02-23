@@ -31,6 +31,7 @@ const socials = [
   { icon: "MessageCircle", label: "Telegram", href: "#" },
   { icon: "Instagram", label: "Instagram", href: "#" },
   { icon: "Youtube", label: "YouTube", href: "#" },
+  { icon: "Users", label: "ВКонтакте", href: "https://vk.com/club119672828" },
 ];
 
 const ContactsSection = () => {
