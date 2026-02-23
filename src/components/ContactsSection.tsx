@@ -28,7 +28,7 @@ const contacts = [
 ];
 
 const socials = [
-  { icon: "MessageCircle", label: "Telegram", href: "#" },
+  { icon: "MessageCircle", label: "Telegram", href: "https://t.me/Hispania35" },
   { icon: "Instagram", label: "Instagram", href: "#" },
   { icon: "Youtube", label: "YouTube", href: "#" },
   { icon: "Users", label: "ВКонтакте", href: "https://vk.com/club119672828" },
