@@ -21,21 +21,30 @@ const BookingSection = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name || !form.phone || !form.language) {
       toast({ title: "Заполните все обязательные поля", variant: "destructive" });
       return;
     }
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+    try {
+      const res = await fetch("https://functions.poehali.dev/274de1ff-48fd-46a1-bb99-5d28f14e6f38", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error();
       toast({
         title: "Заявка отправлена! 🎉",
         description: "Мы свяжемся с вами в течение 30 минут",
       });
       setForm({ name: "", phone: "", language: "", type: "" });
-    }, 1000);
+    } catch {
+      toast({ title: "Ошибка отправки", description: "Попробуйте ещё раз или позвоните нам", variant: "destructive" });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
