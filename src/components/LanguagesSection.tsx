@@ -17,7 +17,7 @@ const languages = [
     native: "Deutsch",
     gradient: "gradient-card-purple",
     levels: "A1 — B2",
-    features: ["Goethe-Zertifikat", "Учёба в Германии", "Разговорная практика", "Грамматический курс"],
+    features: ["Goethe-Zertifikat", "Учёба в Германии", "Разговорная практика"],
     popular: false,
   },
   {
