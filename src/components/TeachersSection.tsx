@@ -7,14 +7,11 @@ const TeachersSection = () => {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-medium mb-4">
             <Icon name="GraduationCap" size={16} />
-            Преподаватели
+            Ваш наставник
           </div>
           <h2 className="font-heading font-800 text-4xl lg:text-5xl mb-4">
-            Команда <span className="gradient-text">профессионалов</span>
+            <span className="gradient-text">Седова Ольга</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
-            Носители языка и сертифицированные преподаватели с международным опытом
-          </p>
         </div>
 
         <div className="flex justify-center">
