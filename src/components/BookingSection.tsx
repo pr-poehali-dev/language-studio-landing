@@ -71,7 +71,7 @@ const BookingSection = () => {
                     <Icon name="Clock" size={18} className="text-white" />
                   </div>
                   <div>
-                    <div className="font-heading font-bold text-sm">45 минут</div>
+                    <div className="font-heading font-bold text-sm">30 минут</div>
                     <div className="text-xs text-muted-foreground">Продолжительность пробного</div>
                   </div>
                 </div>
