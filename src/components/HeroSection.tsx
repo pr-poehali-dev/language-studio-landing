@@ -78,7 +78,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <div className="font-heading font-bold text-sm">English</div>
-                  <div className="text-xs text-muted-foreground">A1 → C2</div>
+                  <div className="text-xs text-muted-foreground">A1 → B2</div>
                 </div>
               </div>
             </div>
@@ -90,7 +90,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <div className="font-heading font-bold text-sm">Español</div>
-                  <div className="text-xs text-muted-foreground">A1 → C1</div>
+                  <div className="text-xs text-muted-foreground">A1 → B2</div>
                 </div>
               </div>
             </div>
