@@ -8,7 +8,7 @@ const languages = [
     native: "English",
     gradient: "gradient-card-blue",
     levels: "A1 — B2",
-    features: ["Разговорный клуб", "Бизнес-английский", "IELTS / TOEFL", "Для детей и взрослых"],
+    features: ["Разговорный клуб", "Бизнес-английский", "Для взрослых"],
     popular: true,
   },
   {
