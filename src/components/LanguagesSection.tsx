@@ -26,7 +26,7 @@ const languages = [
     native: "Español",
     gradient: "gradient-card-orange",
     levels: "A1 — B2",
-    features: ["DELE подготовка", "Латиноамериканский", "Для путешествий", "Культура и кино"],
+    features: ["DELE подготовка", "Латиноамериканский", "Для путешествий"],
     popular: false,
   },
 ];
