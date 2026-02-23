@@ -23,6 +23,9 @@ const TeachersSection = () => {
                 className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
               />
             </div>
+            <div className="p-6">
+              <p className="text-muted-foreground text-sm">Носитель языка и сертифицированный преподаватель с международным опытом</p>
+            </div>
           </div>
         </div>
       </div>
