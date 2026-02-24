@@ -33,7 +33,7 @@ const AboutSection = () => {
             О студии
           </div>
           <h2 className="font-heading font-800 text-4xl lg:text-5xl mb-4">
-            Почему выбирают <span className="gradient-text">LinguaViva</span>
+            Почему выбирают <span className="gradient-text">Hispania</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             Мы создали пространство, где изучение языков — это удовольствие, а не зубрёжка
